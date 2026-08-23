@@ -4,11 +4,13 @@
   "name": "TVNerd — Stream & TV Hub",
   "launcherName": "TVNerd",
   "display": "standalone",
-  "themeColor": "#0f1315",
-  "themeColorDark": "#080c0e",
-  "navigationColor": "#080c0e",
-  "navigationColorDark": "#080c0e",
-  "backgroundColor": "#080c0e",
+  "themeColor": "#0F1315",
+  "themeColorDark": "#080C0E",
+  "navigationColor": "#080C0E",
+  "navigationColorDark": "#080C0E",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#080C0E",
   "enableNotifications": true,
   "startUrl": "/",
   "iconUrl": "https://tvnerd.netlify.app/icon-512.png",
@@ -18,12 +20,16 @@
     "path": "./android.keystore",
     "alias": "tvnerd"
   },
-  "appVersion": "1.0.0",
-  "appVersionCode": 1,
+  "appVersionName": "1.0.0",
+  "appVersionCode": 2,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://tvnerd.netlify.app/manifest.webmanifest",
   "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
   "enableSiteSettingsShortcut": true,
   "isChromeOSOnly": false,
   "isMetaQuest": false,
@@ -31,5 +37,7 @@
   "orientation": "default",
   "fingerprints": [],
   "additionalTrustedOrigins": [],
-  "retainedBundles": []
+  "retainedBundles": [],
+  "displayOverride": [],
+  "appVersion": "1.0.0"
 }

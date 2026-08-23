@@ -9,3 +9,8 @@ convex/_generated/
 .android-tools/
 # GitHub workflow backup (needs workflow-scoped token to push)
 .github-backup/
+twa/app/build/
+twa/.gradle/
+twa/*.apk
+twa/*.aab
+twa/*.idsig
