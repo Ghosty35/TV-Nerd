@@ -140,7 +140,7 @@ body.library-managing .library-card.selected:after { content: '✓'; position: a
 .empty-state { border: 1px dashed #cbd7d5; background: #fff; padding: 35px; text-align: center; color: var(--muted); font-size: 12px; border-radius: 7px; }
 
 /* Cinema theme: quiet charcoal surfaces keep artwork and release accents in focus. */
-body { background: #0f1315; color: var(--ink); }
+body { background: var(--canvas); color: var(--ink); }
 .sidebar { background: #0b0f11; border-color: #202a2d; }
 .brand-name, .section-title, .panel-title, .page-title, .episode-name, .cover-title, .mini-date strong, .calendar-head, .search-result-copy strong, .setting-row strong { color: var(--ink); }
 .brand-kicker { color: #bb755c; }
