@@ -687,6 +687,11 @@ document.getElementById('mobile-profile-button').addEventListener('click', () =>
 document.getElementById('new-list-button').addEventListener('click', createList);
 document.getElementById('menu-toggle')?.addEventListener('click', () => { const mobile = window.matchMedia('(max-width: 680px)').matches; const className = mobile ? 'menu-open' : 'menu-collapsed'; document.body.classList.toggle(className); const expanded = document.body.classList.contains(className); document.getElementById('menu-toggle').setAttribute('aria-expanded', String(expanded)); document.getElementById('menu-scrim').hidden = !mobile || !expanded; });
 document.getElementById('menu-scrim')?.addEventListener('click', () => { document.body.classList.remove('menu-open'); document.getElementById('menu-scrim').hidden = true; });
+document.getElementById('more-menu-button')?.addEventListener('click', event => { event.stopPropagation(); const menu = document.getElementById('more-menu'); if (menu) menu.hidden = !menu.hidden; });
+document.addEventListener('click', event => { const menu = document.getElementById('more-menu'); if (menu && !menu.hidden && !event.target.closest('.more-menu-wrap')) menu.hidden = true; });
+document.querySelectorAll('.more-menu-item').forEach(button => button.addEventListener('click', () => { document.getElementById('more-menu')?.setAttribute('hidden', ''); navigate(button.dataset.nav); }));
+document.getElementById('mobile-more-button')?.addEventListener('click', event => { event.stopPropagation(); const panel = document.getElementById('mobile-more-panel'); if (panel) panel.hidden = !panel.hidden; });
+document.addEventListener('click', event => { const panel = document.getElementById('mobile-more-panel'); if (panel && !panel.hidden && !event.target.closest('#mobile-more-button') && !event.target.closest('#mobile-more-panel')) panel.hidden = true; });
 initAuth();
 renderSidebarLists();
 updateChrome();
