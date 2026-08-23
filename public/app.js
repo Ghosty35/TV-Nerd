@@ -301,7 +301,7 @@ function updateChrome() {
   const profile = currentProfile();
   const sidebar = document.querySelector('#profile-button');
   const mobile = document.querySelector('#mobile-profile-button');
-  if (sidebar) sidebar.innerHTML = `${avatarMarkup(profile, 'avatar')}<span><strong>${escapeHtml(profile.displayName)}</strong><small>${escapeHtml(profile.username || 'Local account')}</small></span><span class="chevron">...</span>`;
+  if (sidebar) sidebar.innerHTML = `${avatarMarkup(profile, 'avatar')}<span><strong>${escapeHtml(profile.displayName)}</strong><small>${escapeHtml(profile.username || 'Local account')}</small></span><span class="chevron" aria-hidden="true">›</span>`;
   if (mobile) { mobile.innerHTML = avatarMarkup(profile, 'avatar top-avatar-image'); mobile.setAttribute('aria-label', `${profile.displayName} profile`); }
   const heading = document.querySelector('.page-title');
   if (heading && state.activeView === 'today') { const greeting = document.querySelector('.page-head h1'); if (greeting) greeting.textContent = `Good evening, ${profile.displayName.split(' ')[0] || 'there'}.`; }
