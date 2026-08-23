@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111a22">
+  <meta name="description" content="TVNerd — Stream & TV Hub — Your Digital Nerd At Your Service for shows, movies, watch history, and upcoming releases.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.svg">
+  <title>TVNerd | Stream & TV Hub — Your Digital Nerd At Your Service</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="auth-gate" id="auth-gate">
+    <div class="auth-atmosphere" aria-hidden="true"><span class="auth-poster poster-one"></span><span class="auth-poster poster-two"></span><span class="auth-poster poster-three"></span><span class="auth-poster poster-four"></span><span class="auth-poster poster-five"></span><span class="auth-poster poster-six"></span><span class="auth-poster poster-seven"></span><span class="auth-poster poster-eight"></span><span class="auth-poster poster-nine"></span><span class="auth-poster poster-ten"></span><span class="auth-atmosphere-shade"></span></div>
+    <section class="auth-card" aria-labelledby="auth-title">
+      <div class="auth-brand"><div class="brand-mark" aria-hidden="true">T</div><div><strong>TVNerd</strong><span>Stream & TV Hub — Your Digital Nerd At Your Service</span></div></div>
+      <div class="hero-brand-lockup"><span class="hero-brand-mark">T</span><span class="hero-brand-name">TVNerd</span></div>
+      <div class="auth-kicker">STREAM & TV HUB · PRIVATE WATCHSPACE</div>
+      <h1 id="auth-title">Welcome back.</h1>
+      <p class="auth-copy">Sign in to sync your watch life, friends, reminders, and guide preferences.</p>
+      <div class="partner-strip" aria-label="TVNerd integrations"><span class="partner imdb-brand">IMDb</span><span class="partner psa-brand">PSA</span><span class="partner ext-brand">EXT</span><span class="partner google-brand"><b>G</b> Google</span><span class="partner youtube-brand"><b>▶</b> YouTube</span><span class="partner discord-brand"><b>◌</b> Discord</span></div>
+      <button class="google-auth-button" id="google-auth-button" type="button"><span class="google-g">G</span><span>Continue with Google</span></button>
+      <div class="auth-divider"><span>or use an account</span></div>
+      <form id="auth-form" class="auth-form">
+        <label>Email address<input id="auth-email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label>Password<input id="auth-password" type="password" autocomplete="current-password" placeholder="At least 6 characters" minlength="6" required></label>
+        <button class="button primary auth-submit" id="auth-submit" type="submit">Sign in</button>
+      </form>
+      <button class="auth-mode-button" id="auth-mode-button" type="button">Need an account? Create one</button>
+      <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+      <small class="auth-footnote">Local prototype mode keeps your library on this device. Cloud sync activates after backend credentials are connected.</small>
+    </section>
+  </div>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">T</div>
+        <div>
+          <div class="brand-name">TVNerd</div>
+          <div class="brand-kicker">stream & TV hub · your digital nerd at your service</div>
+        </div>
+      </div>
+
+      <div class="sidebar-label">Workspace</div>
+      <nav class="primary-nav">
+        <button class="nav-item active" data-view="today" type="button"><span class="nav-icon">+</span><span>Today</span><span class="nav-count">3</span></button>
+        <button class="nav-item" data-view="shows" type="button"><span class="nav-icon">[]</span><span>My shows</span></button>
+        <button class="nav-item" data-view="calendar" type="button"><span class="nav-icon">#</span><span>Calendar</span></button>
+        <button class="nav-item" data-view="discover" type="button"><span class="nav-icon">*</span><span>Discover</span></button>
+      </nav>
+
+      <div class="sidebar-label list-heading">Your lists <button class="tiny-button" id="new-list-button" title="Create a list" type="button">+</button></div>
+      <div class="custom-lists" id="custom-lists"></div>
+
+      <div class="sidebar-footer">
+        <div class="privacy-note"><span class="status-dot"></span><span><strong>Local mode</strong><br>Private on this device</span></div>
+        <button class="profile-button" id="profile-button" type="button"><span class="avatar">JD</span><span><strong>Jordan Davis</strong><small>Local account</small></span><span class="chevron">...</span></button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Show or hide navigation" title="Show or hide navigation"><span></span><span></span><span></span></button><div class="mobile-brand"><div class="brand-mark">T</div><span>TVNerd</span></div><nav class="stream-top-nav" aria-label="Streaming navigation"><button class="stream-nav-item active" data-view="today" type="button">⌂ <span>Home</span></button><button class="stream-nav-item" data-view="discover" type="button">▣ <span>Movie</span></button><button class="stream-nav-item" data-view="calendar" type="button">▤ <span>TV Guide</span></button><button class="stream-nav-item stream-recording" data-stream-action="recording" type="button">▣ <span>Recording</span></button><button class="stream-nav-item" data-view="shows" type="button">♡ <span>Watchlist</span></button></nav>
+        <label class="global-search" for="global-search-input"><span class="search-icon" aria-hidden="true"></span><input id="global-search-input" type="search" placeholder="Search shows, people, genres..." autocomplete="off"><kbd>CTRL K</kbd></label>
+        <div class="top-actions">
+          <button class="icon-button" id="notifications-button" type="button" title="Notifications" aria-label="Notifications"><span class="bell-icon">!</span><i></i></button>
+          <button class="sync-button" id="sync-button" type="button"><span class="sync-symbol">&#8635;</span><span>Sync library</span></button>
+          <button class="avatar top-avatar" id="mobile-profile-button" type="button">JD</button>
+        </div>
+      </header>
+
+      <div id="app-view" class="view-container"></div>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button class="nav-item active" data-view="today" type="button"><span class="nav-icon">+</span><span>Today</span></button>
+    <button class="nav-item" data-view="shows" type="button"><span class="nav-icon">[]</span><span>Library</span></button>
+    <button class="nav-item" data-view="calendar" type="button"><span class="nav-icon">#</span><span>Calendar</span></button>
+    <button class="nav-item" data-view="discover" type="button"><span class="nav-icon">*</span><span>Discover</span></button>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <section class="show-modal" id="show-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"></section>
+  </div>
+  <input type="file" id="import-input" accept="application/json" hidden>
+  <div class="menu-scrim" id="menu-scrim" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>
