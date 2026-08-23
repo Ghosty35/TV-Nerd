@@ -216,6 +216,7 @@ body[data-theme="royal"] .stream-nav-item:hover, body[data-theme="royal"] .strea
 .notif-wrap { position: relative; }
 .notif-badge { position: absolute; top: -4px; right: -7px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 9px; background: var(--accent); color: #fff; font: 700 8.5px 'DM Mono', monospace; line-height: 16px; text-align: center; }
 .notif-panel { position: absolute; z-index: 60; top: calc(100% + 10px); right: 0; width: 330px; max-width: calc(100vw - 32px); border: 1px solid #354548; border-radius: 10px; background: var(--surface-3); box-shadow: 0 18px 44px rgba(0,0,0,.5); overflow: hidden; }
+@media (max-width: 680px) { .notif-panel { position: fixed; right: 14px; left: 14px; width: auto; } }
 .notif-panel[hidden] { display: none; }
 .notif-panel-head { display: flex; align-items: center; justify-content: space-between; padding: 13px 15px; border-bottom: 1px solid #2a3a3d; }
 .notif-panel-head strong { display: block; font-size: 12px; letter-spacing: -.2px; }
