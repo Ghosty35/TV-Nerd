@@ -241,7 +241,8 @@ body[data-theme="royal"] .stream-nav-item:hover, body[data-theme="royal"] .strea
 /* ---------- Countdowns ---------- */
 .release-countdown { display: inline-block; align-self: start; margin-top: 2px; padding: 3px 8px; border-radius: 20px; background: rgba(24,124,120,.14); color: #6fc7b6; font: 700 9px 'DM Mono', monospace; white-space: nowrap; }
 .countdown-live { color: #f0a06e; background: rgba(225,109,67,.14); }
-.upcoming-banner { display: flex; align-items: center; gap: 13px; margin: 0 0 16px; padding: 12px 16px; border: 1px solid #2a3a3d; border-radius: 9px; background: var(--surface); }
+.upcoming-banner { display: flex; align-items: center; gap: 13px; margin: 94px auto 16px; width: calc(100% - 48px); max-width: 1220px; padding: 12px 16px; border: 1px solid #2a3a3d; border-radius: 9px; background: var(--surface); position: relative; z-index: 2; }
+@media (max-width: 520px) { .upcoming-banner { margin-top: 82px; width: calc(100% - 32px); } }
 .upcoming-banner-icon { font-size: 20px; }
 .upcoming-banner strong { display: block; font-size: 12px; }
 .upcoming-banner span { display: block; margin-top: 2px; color: #8a9799; font-size: 10.5px; }
