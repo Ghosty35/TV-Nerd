@@ -4,3 +4,8 @@ dist/
 .env.local
 .env.*.local
 convex/_generated/
+
+# Local Android build toolchain (JDK + Android SDK)
+.android-tools/
+# GitHub workflow backup (needs workflow-scoped token to push)
+.github-backup/

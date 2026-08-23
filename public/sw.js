@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tvnerd-shell-v15';
+const CACHE_NAME = 'tvnerd-shell-v16';
 const SHELL = ['/', './legacy.html', './styles.css', './app.js', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', event => {
