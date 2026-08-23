@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160">
+  <!-- Mark (scaled-down icon) -->
+  <g transform="translate(8 12) scale(0.265)">
+    <rect width="512" height="512" rx="112" fill="#10171b"/>
+    <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="#2c3b40" stroke-width="10"/>
+    <g stroke="#9db8b3" stroke-width="34" stroke-linecap="round">
+      <line x1="212" y1="118" x2="180" y2="58"/>
+      <line x1="300" y1="118" x2="332" y2="58"/>
+    </g>
+    <circle cx="180" cy="58" r="30" fill="#e1603a"/>
+    <circle cx="332" cy="58" r="30" fill="#e1603a"/>
+    <rect x="96" y="118" width="320" height="280" rx="46" fill="#0e1519" stroke="#2c3b40" stroke-width="12"/>
+    <rect x="120" y="146" width="272" height="196" rx="26" fill="#1a292d" stroke="#3a4c50" stroke-width="10"/>
+    <path d="M236 196l92 48-92 48z" fill="#e1603a"/>
+    <rect x="236" y="398" width="40" height="26" rx="8" fill="#3a4c50"/>
+    <rect x="196" y="420" width="120" height="16" rx="8" fill="#2c3b40"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-weight="800">
+    <text x="162" y="92" font-size="76" letter-spacing="-2" fill="#f4f7f5">TV<text fill="#e1603a">Nerd</text></text>
+  </g>
+  <g font-family="'Segoe UI', Arial, sans-serif" font-weight="600" letter-spacing="5">
+    <text x="166" y="124" font-size="15" fill="#6f9d96">STREAM &amp; TV HUB</text>
+  </g>
+  <text x="166" y="144" font-family="'Segoe UI', Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#8a9a9c">YOUR DIGITAL NERD AT YOUR SERVICE</text>
+</svg>

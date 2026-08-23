@@ -1,4 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="28" fill="#19232b"/>
-  <path d="M34 26h35c17 0 28 9 28 24 0 12-7 20-18 23l21 29H81L62 76H51v26H34V26Zm17 14v22h16c8 0 13-4 13-11s-5-11-13-11H51Z" fill="#e16d43"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#162129"/>
+      <stop offset="1" stop-color="#0a0f12"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2f33"/>
+      <stop offset="1" stop-color="#142124"/>
+    </linearGradient>
+    <linearGradient id="play" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7a4d"/>
+      <stop offset="1" stop-color="#e1603a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#e1603a" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#e1603a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- App background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="#2c3b40" stroke-width="6"/>
+
+  <!-- Antenna / "nerd glasses" strokes -->
+  <g stroke="#9db8b3" stroke-width="22" stroke-linecap="round">
+    <line x1="212" y1="118" x2="180" y2="58"/>
+    <line x1="300" y1="118" x2="332" y2="58"/>
+  </g>
+  <circle cx="180" cy="58" r="22" fill="#e1603a"/>
+  <circle cx="332" cy="58" r="22" fill="#e1603a"/>
+
+  <!-- TV body -->
+  <rect x="96" y="118" width="320" height="280" rx="46" fill="#0e1519" stroke="#2c3b40" stroke-width="10"/>
+  <!-- Screen -->
+  <rect x="120" y="146" width="272" height="196" rx="26" fill="url(#screen)" stroke="#3a4c50" stroke-width="8"/>
+  <rect x="120" y="146" width="272" height="196" rx="26" fill="url(#glow)"/>
+
+  <!-- Play button -->
+  <path d="M236 196l92 48-92 48z" fill="url(#play)"/>
+  <circle cx="236" cy="244" r="60" fill="none" stroke="rgba(225,96,58,.5)" stroke-width="8"/>
+
+  <!-- Stand -->
+  <rect x="236" y="398" width="40" height="26" rx="8" fill="#3a4c50"/>
+  <rect x="196" y="420" width="120" height="16" rx="8" fill="#2c3b40"/>
+
+  <!-- Power dot -->
+  <circle cx="256" cy="424" r="5" fill="#4b9f84"/>
 </svg>
